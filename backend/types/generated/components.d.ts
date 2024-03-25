@@ -128,6 +128,31 @@ export interface ElementsTestimonial extends Schema.Component {
   };
 }
 
+export interface ElementsTimeTabe extends Schema.Component {
+  collectionName: 'components_elements_time_tabes';
+  info: {
+    displayName: 'time-tabe';
+    icon: 'bulletList';
+    description: '';
+  };
+  attributes: {
+    SVGComponent: Attribute.Component<'elements.time-table'>;
+  };
+}
+
+export interface ElementsTimeTable extends Schema.Component {
+  collectionName: 'components_elements_time_tables';
+  info: {
+    displayName: 'time-table';
+    icon: 'bulletList';
+    description: '';
+  };
+  attributes: {
+    test: Attribute.Time & Attribute.DefaultTo<'17:00'>;
+    SVGComponent: Attribute.Media;
+  };
+}
+
 export interface LayoutFooter extends Schema.Component {
   collectionName: 'components_layout_footers';
   info: {
@@ -485,6 +510,8 @@ declare module '@strapi/types' {
       'elements.notification-banner': ElementsNotificationBanner;
       'elements.plan': ElementsPlan;
       'elements.testimonial': ElementsTestimonial;
+      'elements.time-tabe': ElementsTimeTabe;
+      'elements.time-table': ElementsTimeTable;
       'layout.footer': LayoutFooter;
       'layout.logo': LayoutLogo;
       'layout.navbar': LayoutNavbar;

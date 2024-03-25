@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_elements_time_tables",
+  "info": {
+    "displayName": "time-table",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "test": {
+      "type": "time",
+      "default": "17:00"
+    },
+    "SVGComponent": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

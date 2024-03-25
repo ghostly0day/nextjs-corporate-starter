@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_elements_time_tabes",
+  "info": {
+    "displayName": "time-tabe",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "SVGComponent": {
+      "displayName": "time-table",
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.time-table"
+    }
+  }
+}
